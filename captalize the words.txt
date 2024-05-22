@@ -1,0 +1,15 @@
+You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
+Sample Input
+
+chris alan
+Sample Output
+
+Chris Alan
+-------------------------------------------------------------------------------------------------------------------
+SOLUTION
+
+def solve(full_name):
+    name_parts = full_name.split(' ')
+    capitalized_parts = [part.capitalize() for part in name_parts]
+    capitalized_name = ' '.join(capitalized_parts)
+    return capitalized_name
